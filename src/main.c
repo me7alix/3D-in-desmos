@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#define FILL
 #include "desmos3D.h"
 
 #define EASY_OBJ_IMPLEMENTATION
@@ -63,7 +65,6 @@ void write_vec3(char *buf, EasyOBJ_V3 v) {
 }
 
 void write_triangle(char *buf, int a, int b, int c) {
-	const char *base = "{\"type\":\"expression\",\"color\":\"#000000\",\"latex\":\"\\\\operatorname{polygon}((Q[%i].x,Q[%i].y),(Q[%i].x,Q[%i].y),(Q[%i].x,Q[%i].y))\"},";
 	char vbuf[256];
 	sprintf(vbuf, base, a, a, b, b, c, c);
 	strcat(buf, vbuf);
@@ -71,8 +72,8 @@ void write_triangle(char *buf, int a, int b, int c) {
 
 void render_model_to_desmos(EasyOBJ rm, const char *output) {
 	char res[1024 * 1024];
-	char vbuf[1024 * 1024];
-	char tbuf[1024 * 1024];
+	char vbuf[1024 * 512];
+	char tbuf[1024 * 512];
 
 	for (int i = 0; i < rm.vn; i++) {
 		write_vec3(vbuf, rm.vs[i]);

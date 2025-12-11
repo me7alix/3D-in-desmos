@@ -1,6 +1,7 @@
 # 3D in desmos
 <img width="728" height="585" alt="image" src="https://github.com/user-attachments/assets/f4fabe1f-c983-4d13-90a1-a6743565a283" />
 
+https://www.desmos.com/calculator/hk0lywrb4a?lang=en
 
 ## How to use
 First of all, you need to compile the project and generate the desmos graph that contains the 3D model

@@ -1,6 +1,6 @@
 # 3D in desmos
-<img width="908" height="602" alt="image" src="https://github.com/user-attachments/assets/2c37ebe0-808b-47dc-ba1a-caa5112d2c2f" />
-<img width="930" height="676" alt="image" src="https://github.com/user-attachments/assets/4557bad1-1cba-46fa-a5e7-df82c6499e94" />
+<img width="728" height="585" alt="image" src="https://github.com/user-attachments/assets/f4fabe1f-c983-4d13-90a1-a6743565a283" />
+
 
 ## How to use
 First of all, you need to compile the project and generate the desmos graph that contains the 3D model
